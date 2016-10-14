@@ -8,6 +8,7 @@ class Cadena extends Model
 {
     //
     protected $description = ['description'];
+    protected $version = ['version'];
     protected $name = ['name'];
     protected $id = ['id'];
 }

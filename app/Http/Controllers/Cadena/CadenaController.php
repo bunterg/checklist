@@ -26,11 +26,18 @@ class CadenaController extends Controller
 		$cadena->name = $request->name;		
 		$cadena->description = $request->description;		
 		$cadena->save();
-    return Redirect::back()->withSuccess('Message sent!');
+    return Redirect::back()->withSuccess('Cadena creada!');
 	}
 
   public function editor($id)
   {
-    return view('administ.editor', ['id' => Cadena::where('id', $id)->get()]);
+    $cadena = Cadena::where('id', $id)->get();
+    return view('administ.editor', ['cadena' => $cadena]);
+  }
+
+  public function destroy($id)
+  {
+    Cadena::where('id', $id)->delete();
+    return Redirect::back()->withSuccess('Cadena eliminada!');
   }
 }

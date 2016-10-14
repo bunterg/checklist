@@ -1,18 +1,19 @@
 #page-wrapper {
-    background-color: #f8f8f8;
-    margin: 16px;
+  background-color: #f8f8f8;
+  margin: 16px;
 }
 .navbar-default .sidebar {
-    border-right: 1px solid rgb(231, 231, 231);
+  border-right: 1px solid rgb(231, 231, 231);
 }
 nav {
-    color: white;
+  color: white;
 }
-
 #data:hover {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
-
 *[data-href] {
-    cursor: pointer;
+  cursor: pointer;
+}
+th#version {
+  text-align: center;
 }

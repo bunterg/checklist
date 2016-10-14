@@ -21,42 +21,24 @@
 						</div>
 						<button class="btn btn-primary btn-sm">Crear</button>
 					</form>
-					<hr/>
-					<div class="input-group">
-            <span class="input-group-btn">
-              <button class="btn btn-default btn-sm" type="button">
-                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-              </button>
-            </span>
-            <input type="text" class="form-control" placeholder="Buscar...">
-          </div><!-- /input-group -->
-					<!-- /input-group -->
 				</div>
 				<!-- Table -->
 				<table class="table" id="auto-id-master">
 					<tr>
 						<th>#</th>
+            <th>Versión</th>
 						<th>Nombre</th>
 						<th>descripción</th>
 					</tr>
           @foreach ($cadenas as $cadena)
 					<tr id="data" onclick="window.document.location='{{ url('/cadena/'.$cadena->id) }}';">
 						<th>{{ $cadena->id }}</th>
+            <th id="version">{{ $cadena->version }}</th>
 						<th>{{ $cadena->name }}</th>
 						<th>{{ $cadena->description }}</th>
 					</tr>
           @endforeach
 				</table>
-				<div class="panel-footer">
-					<div class="btn-group" role="group" aria-label="paginas">
-						<button type="button" class="btn btn-default"><</button>
-						<button type="button" class="btn btn-default">1</button>
-						<button type="button" class="btn btn-default">2</button>
-						<button type="button" class="btn btn-default">3</button>
-						<button type="button" class="btn btn-default">4</button>
-						<button type="button" class="btn btn-default">></button>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>

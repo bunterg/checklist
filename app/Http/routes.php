@@ -28,7 +28,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/cadena', 'Cadena\CadenaController@store');
 
     Route::get('/cadena/{id}', 'Cadena\CadenaController@editor')->where('id', '[0-9]+');
-    
+    Route::delete('/cadena/{id}', 'Cadena\CadenaController@destroy')->where('id', '[0-9]+');
+
     Route::get('/home', 'HomeController@index');
 
 });

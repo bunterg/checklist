@@ -8,7 +8,6 @@ use App\Http\Controllers\Controller;
 
 use App\Cadena;
 use Illuminate\Support\Facades\Redirect;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class CadenaController extends Controller
 {

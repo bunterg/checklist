@@ -39,6 +39,6 @@ class CadenaController extends Controller
   public function destroy($id)
   {
     Cadena::findOrFail($id)->delete();
-    return redirect()->route('/cadena');
+    return redirect()->route('cadenaHome');
   }
 }

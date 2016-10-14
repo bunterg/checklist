@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Cadena;
 
 use Illuminate\Http\Request;
-use App\Cadena;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+
+use App\Cadena;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class CadenaController extends Controller
 {

@@ -37,7 +37,7 @@ class CadenaController extends Controller
 
   public function destroy($id)
   {
-    Cadena::where('id', $id)->delete();
+    Cadena::findOrFail($id)->delete();
     return Redirect::back()->withSuccess('Cadena eliminada!');
   }
 }

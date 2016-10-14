@@ -14,7 +14,7 @@
             </textarea>
           </div>
           <div class="panel-footer">
-            <form method="POST">
+            <form method="POST" role="form">
               <input name="token" type="hidden" value="{{ csrf_token() }}">  
               <input name="_method" type="hidden" value="DELETE">
               <button type="submit" class="btn btn-danger">

@@ -15,8 +15,8 @@
           </div>
           <div class="panel-footer">
             <form method="POST" role="form">
-              <input name="_token" type="hidden" value="{{ csrf_token() }}">  
-              <input name="_method" type="hidden" value="DELETE">
+              {{ csrf_field() }}  
+              {{ method_field('DELETE') }}
               <button type="submit" class="btn btn-danger">
                 <span class="glyphicon glyphicon-trash"></span>
               </button>

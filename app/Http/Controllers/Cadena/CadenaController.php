@@ -32,7 +32,7 @@ class CadenaController extends Controller
 
   public function editor($id)
   {
-    $cadena = Cadena::where('id', $id)->get();
+    $cadena = Cadena::findOrFail($id)->get();
     return view('administ.editor', ['cadena' => $cadena]);
   }
 

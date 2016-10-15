@@ -12,7 +12,8 @@
           <textarea  class="form-control" rows="3">
             {{ $cadena->description }}
           </textarea>
-          <button type="submit" class="btn btn-primary">
+          <br>
+          <button type="submit" class="btn">
             Actualizar
           </button>
         </div>
@@ -28,9 +29,9 @@
         <button class="btn btn-primary">
           Desplegar
         </button>
-      </div>      
+      </div>
       <hr>
-      <form method="POST" role="form" class="pull-right">
+      <form method="POST" role="form">
         {{ csrf_field() }}  
         {{ method_field('DELETE') }}
         <div>
@@ -38,7 +39,7 @@
             Eliminar cadena de ejecución, esto ocultará la version
           </label>
           <button type="submit" class="btn btn-danger">
-            <span class="glyphicon glyphicon-trash"></span>
+            Eliminar
           </button>
         </div>
       </form>

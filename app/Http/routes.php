@@ -19,7 +19,7 @@ Route::group(['middleware' => 'auth'], function () {
     
     Route::get('/', function () {
         return view('home');
-    });
+    })->name('home');
 
     Route::get('/prueba', 'Prueba\PruebaController@index');
     Route::post('/prueba', 'Prueba\PruebaController@store');

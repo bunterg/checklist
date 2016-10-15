@@ -32,13 +32,17 @@ class CadenaController extends Controller
 
   public function editor($id)
   {
-    $cadena = Cadena::findOrFail($id)->get();
-    return view('administ.editor', ['cadena' => $cadena]);
+    $cadena = Cadena::where('id', $id)->get();
+    if ($cadena) {
+      return view('administ.editor', ['cadena' => $cadena]);
+    } else {
+      return redirect()->route('home');
+    }
   }
 
   public function destroy($id)
   {
-    Cadena::findOrFail($id)->delete();
+    Cadena::where('id', $id)->delete();
     return redirect()->route('cadenaHome');
   }
 }

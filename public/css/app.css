@@ -17,3 +17,6 @@ nav {
 th#version {
   text-align: center;
 }
+.text-muted {
+  color: #E0E0E0;
+}

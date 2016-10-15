@@ -6,7 +6,7 @@
     <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h3 class="panel-title">{{ $cadena->name }} <span class="text-muted"> versión: {{ $cadena->version  }}</span></h3>
+            <h3 class="panel-title"><strong>{{ $cadena->name }}</strong> <span class="text-muted"> versión: {{ $cadena->version  }}</span></h3>
           </div>
           <div class="panel-body">
             <textarea  class="form-control" rows="3">

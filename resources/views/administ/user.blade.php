@@ -6,9 +6,9 @@
     <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-primary">
           <div class="panel-heading">
+            <h3 class="panel-title">Usuarios</h3>
           </div>
           <div class="panel-body">
-            <h3 class="panel-title">Usuarios</h3>
           </div>
           <table class="table" id="auto-id-master">
 					<tr>
@@ -22,9 +22,7 @@
 					</tr>
           @endforeach
 				</table>
-          <div class="panel-footer">
-          </div>
-        </div>
+      </div>
     </div>
 	</div>
 </div>

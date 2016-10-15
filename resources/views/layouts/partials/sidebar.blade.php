@@ -26,7 +26,7 @@
             <ul class="submenu">
                 <li class="">
                     <a href="{{ url('/cadena') }}" class="">
-                        <i class="menu-icon fa fa-caret-right"></i>
+                        <i class="fa fa-link" aria-hidden="true"></i>
                         Cadena
                     </a>                
                 </li>

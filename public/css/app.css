@@ -20,3 +20,6 @@ th#version {
 .text-muted {
   color: #ECEFF1;
 }
+textarea {
+  resize: vertical;
+}

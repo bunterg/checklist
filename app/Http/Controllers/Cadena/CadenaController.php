@@ -29,10 +29,10 @@ class CadenaController extends Controller
 		$cadena->save();
     return Redirect::back()->withSuccess('Cadena creada!');
 	}
-
+  //!$cadena->isEmpty() se utiliza cuando ->get()
   public function editor($id)
   {
-    $cadena = Cadena::where('id', $id)->get();
+    $cadena = Cadena::where('id', $id)->first();
     if ($cadena) {
       return view('administ.editor', ['cadena' => $cadena]);
     } else {

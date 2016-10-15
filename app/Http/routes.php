@@ -24,7 +24,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/prueba', 'Prueba\PruebaController@index');
     Route::post('/prueba', 'Prueba\PruebaController@store');
 
-    Route::get('/userio', 'Admin\UserController@index');
+    Route::get('/usuario', 'Admin\UserController@index');
 
     Route::get('/cadena', 'Cadena\CadenaController@index')->name('cadenaHome');
     Route::post('/cadena', 'Cadena\CadenaController@store');

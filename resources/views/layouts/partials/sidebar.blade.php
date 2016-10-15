@@ -31,7 +31,7 @@
                     </a>                
                 </li>
                 <li class="">
-                    <a href="{{ url('/userio') }}" class="">
+                    <a href="{{ url('/usuario') }}" class="">
                         <i class="menu-icon fa fa-users green"></i>
                         Usuarios
                     </a>               

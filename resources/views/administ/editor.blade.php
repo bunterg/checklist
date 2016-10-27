@@ -36,7 +36,7 @@
         {{ method_field('DELETE') }}
         <div>
           <label>
-            Eliminar cadena de ejecución, esto ocultará la version
+            Eliminar cadena de ejecución, eliminará todas las cadenas en ejecución de cualquier versión.
           </label>
           <button type="submit" class="btn btn-danger">
             Eliminar

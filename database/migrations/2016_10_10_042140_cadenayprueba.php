@@ -18,11 +18,6 @@ class Cadenayprueba extends Migration
             $table->string('description');
             $table->timestamps();
         });
-        Schema::create('pruebas', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->timestamps();
-        });
     }
 
     /**
